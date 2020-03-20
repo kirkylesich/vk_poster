@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  vk_poster:
+    restart: always
+    build: vk_poster/
+    depends_on:
+      - web_service
+    network_mode: host
+
+
+  web_service:
+    build: web_service/
+    ports:
+      - "5000:80"
