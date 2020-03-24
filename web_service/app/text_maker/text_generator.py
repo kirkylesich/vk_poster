@@ -14,3 +14,4 @@ class TextGenerator:
 
     def get_txt_file(self):
         return requests.get('https://raw.githubusercontent.com/kirkylesich/datasets/master/aneks.txt').text
+
